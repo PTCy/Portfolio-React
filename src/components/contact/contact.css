@@ -1,0 +1,75 @@
+.container-contact {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3rem;
+  margin: 0 auto;
+}
+
+.contact-item {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--tranmition);
+  margin-top: 1rem;
+}
+
+.contact-item:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-contact {
+  font-size: 1.5rem;
+}
+
+/* ============= Form ================== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--color-primary-variant);
+  border-radius: 0.5rem;
+  background: transparent;
+  resize: none;
+  color: var(--color-white);
+}
+button{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px){
+    .container-contact{
+        width: 95%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+}
+@media screen and (max-width: 700px){
+    .container-contact{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+@media screen and (max-width: 600px){
+    .container-contact{
+        width: 100%;
+        grid-template-columns:  1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+}
